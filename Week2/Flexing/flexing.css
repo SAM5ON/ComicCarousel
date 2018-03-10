@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+}
+
+body {
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    display: flex;
+    min-height: 100vh;
+}
+
+header {
+    background-color: grey;
+    height: 70px;
+    width: 100%;
+}
+
+footer {
+    flex-direction: row;
+    background-color: orange;
+    height: 30px;
+    width: 100%;
+    align-self: flex-end;
+}

@@ -1,0 +1,13 @@
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 70px 100% 30px;
+}
+
+header {
+    background-color: purple;
+}
+
+footer {
+    background-color: darkgoldenrod;
+}

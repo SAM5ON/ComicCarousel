@@ -1,0 +1,112 @@
+header {
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    height: 90px;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+#menu-button {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.reichstag {
+    position: relative;
+    width: 100%;
+}
+
+main img {
+    filter: brightness(0.6);
+}
+
+.reichstag img {
+    vertical-align: bottom;
+}
+.welcomebutton {
+    position: absolute;
+    left: 23%;
+    top: 43%;
+    text-align: center;
+}
+#welcome {
+    position: relative;
+    width: 100%;
+    color: white;
+    font-size: 4vw;
+    font-style: italic;
+    font-family: Times;
+}
+#button {
+    position: relative;
+    height: 35px;
+    width: 220px;
+    border: 3px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: orange;
+    color: orange;
+    background-color: yellow;
+    outline: none;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #b8b8b894;
+    padding: 3% 5%;
+}
+nav p {
+    font-family: sans-serif;
+}
+
+.item {
+    vertical-align: top;
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    padding-left: 75px;
+    padding-top: 25px;
+}
+
+.item img {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+
+.item p {
+    left: 50px;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #454545;
+    float: left;
+    width: 100%;
+    left: 25px;
+}
+footer p {
+    color: white;
+    font-size: 12px;
+    padding-left: 25px;
+}
+
+@media screen and (max-width: 480px) {
+    #button {
+        position: relative;
+        height: 17px;
+        width: 110px;
+        border: 1.5px;
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,10 @@
+textarea {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: white;
+}
+
+body p {
+    display: none;
+}

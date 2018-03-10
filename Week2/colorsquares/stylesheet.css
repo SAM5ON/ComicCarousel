@@ -1,0 +1,55 @@
+body {
+    width: 832px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.box1 {
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+}
+.smallBox1 {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+.box2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+.smallBox2 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+.box3 {
+    display: flex;
+    align-items: flex-end;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+.smallBox3 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+.box4 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+}
+.smallBox4 {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+}

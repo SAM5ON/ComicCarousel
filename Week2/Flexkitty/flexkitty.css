@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+
+body {
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+header {
+    background-color: grey;
+    height: 70px;
+    /* width: 100%; */
+}
+
+main {
+    display: flex;
+    /* flex-direction: row;
+    align-items: center; */
+    justify-content: center;
+    align-items: center;
+}
+main img {
+    padding: 30px;
+}
+
+footer {
+    background-color: orange;
+    height: 30px;
+    /* width: 100%; */
+    /* align-self: flex-end; */
+}
