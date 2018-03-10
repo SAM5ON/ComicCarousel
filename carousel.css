@@ -14,7 +14,7 @@ body {
     overflow: hidden;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
-    top: 90px;
+    top: 10vh;
 }
 .pictures.offscreen {
     position: absolute;
@@ -63,4 +63,20 @@ body {
 
 .dot.fill {
     background-color: white;
+}
+
+@media screen and (max-width: 480px) {
+    #picframe {
+        height: 100vh;
+        top: 0;
+        border: 0;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    #picframe {
+        height: 100vh;
+        top: 0;
+        border: 0;
+    }
 }

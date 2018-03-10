@@ -1,5 +1,5 @@
 // // add remove method for classes
-//
+// math.abs use for
 var pics = document.getElementsByClassName("pictures");
 var max = pics.length;
 var dots = document.getElementsByClassName("dot");
@@ -33,6 +33,7 @@ var transitioning;
         dots[current].classList.add("fill");
     }
     var current = 0;
+
     [].slice.call(dots).forEach(function(dot, index) {
         dot.addEventListener("click", function(e) {
             if (e.target.classList.contains("fill")) {
@@ -45,5 +46,43 @@ var transitioning;
             }
         });
     });
+    ///////////////////TOUCHEVENTS////////////////////////////////////////////////////
+
+    var touchbody = document.getElementsByTagName("body");
+    touchbody[0].addEventListener("touchstart", handleStart, false);
+    touchbody[0].addEventListener("touchend", handleEnd, false);
+    var startX;
+
+    function handleStart(e) {
+        e.preventDefault();
+        console.log("x: " + e.touches[0].pageX + ", y: " + e.touches[0].pageY);
+        startX = e.touches[0].pageX;
+    }
+    function handleEnd(e) {
+        e.preventDefault();
+        console.log(e);
+        console.log(
+            "x: " +
+                e.changedTouches[0].pageX +
+                ", y: " +
+                e.changedTouches[0].pageY
+        );
+        if (!transitioning && startX - e.changedTouches[0].pageX >= 100) {
+            clearTimeout(timer);
+            movement();
+        }
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////ARROWKEY NAVIGATION//////////////////////////////////////
+
+    window.addEventListener("keydown", function right(e) {
+        console.log(e.keyCode);
+        if (!transitioning && e.keyCode == "39") {
+            clearTimeout(timer);
+            movement();
+        }
+    });
+
     timer = setTimeout(movement, 2000);
 })();
